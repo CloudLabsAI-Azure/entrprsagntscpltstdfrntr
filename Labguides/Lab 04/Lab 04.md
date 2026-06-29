@@ -14,10 +14,7 @@ for all the other features you'll add in future missions.
 
 In this exercise, you will import a pre existing Solution.
 
-1.  Open a browser +++https://copilotstudio.microsoft.com+++ and login using the credentials.
-
-    -    Username - +++@lab.CloudCredential(M365).AdministrativeUsername+++
-    -    Password - +++@lab.CloudCredential(M365).AdministrativePassword+++
+1.  Open a browser +++https://copilotstudio.microsoft.com+++ and login using the credentials from the **Resources** tab.
 
 2.	This open up the Trial activation page. Leave the country as **United States** and click **Get Started**.
 
