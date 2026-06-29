@@ -26,9 +26,9 @@ integration using Copilot Studio’s conversational setup experience.
 
 1.  Open a browser and navigate to Copilot Studio at +++https://copilotstudio.microsoft.com+++ if not logged in already.
 
-    -   Username - +++@lab.CloudCredential(M365).AdministrativeUsername+++
+    -   Username - +++@lab.CloudPortalCredential(User1).Username+++ 
       
-    -   Password -  +++@lab.CloudCredential(M365).AdministrativePassword+++
+    -   TAP -  +++@lab.CloudPortalCredential(User1).AccessToken+++
 
 4.  From the Home page, select **Agent**.
 
@@ -303,14 +303,3 @@ agent that:
 This lab demonstrates how to design, enhance, and publish a
 **production-ready intelligent agent** that goes beyond simple Q&A to
 deliver trustworthy, real-time, and context-aware insights.
-
-
-
-
-
-
-
-
-
-
-
