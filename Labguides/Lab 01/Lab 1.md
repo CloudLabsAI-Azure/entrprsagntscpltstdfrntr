@@ -13,61 +13,57 @@ domain-specific assistant to life.
 
 ## Exercise 1: Creating the agent
 
-1.  Open the link +++https://m365.cloud.microsoft/chat+++ from a
-    browser and login with your credentials. Select **Yes** in the **Stay Signed in** dialog.
+1. Open the link **https://m365.cloud.microsoft/chat** from a browser and login with your credentials. 
 
-    -   Username - +++@lab.CloudCredential(M365).AdministrativeUsername+++
+    - **Email/Username:** <inject key="AzureAdUserEmail"></inject>
       
-    -   TAP -  +++@lab.CloudCredential(M365).AdministrativePassword+++
+    - Enter **Temporary Access Pass:** <inject key="AzureAdUserPassword"></inject> **(1)**
 
-2.  Select **New agent** from the **left** pane. If you are **not** able
-    to see the **New agent** option, **refresh** the **browser** and try
-    again in few minutes. At times, it takes few minutes to get loaded
-    completely.
+1. Select **New agent** from the **left** pane. If you are **not** able to see the **New agent** option, **refresh** the **browser** and try again in few minutes. At times, it takes few minutes to get loaded completely.
 
     ![](./media/image2.png)
 
-3.  Select the **Describe** tab.
+1. Select the **Describe** tab.
 
     ![](./media/image3.png)
 
-4.  You can start defining the custom agent. You can choose a template
-    to start from, or you can simply *describe* the agent by providing a
-    description in natural language. Let's provide the following initial
-    description
+4. You can start defining the custom agent. You can choose a template to start from, or you can simply **describe**the agent by providing a description in natural language. Let's provide the following initial description
 
-    +++You are an expert gardener, and you help users to maintain and improve their home garden providing detailed instructions and advice about the best practices for home gardening.+++
+    ```
+    You are an expert gardener, and you help users to maintain and improve their home garden providing detailed instructions and advice about the best practices for home gardening.
+    ```
 
     ![](./media/image4.png)
 
-5.  Once you have provided the instructions, the initial details are
-    populated.
+5. Once you have provided the instructions, the initial details are populated.
 
-6.  You can rename the agent if needed. Provide the following prompt to
-    do so +++Name it as “Gardening assistant”+++.
+6. You can rename the agent if needed. Provide the following prompt to do so **Name** it as **Gardening assistant**.
 
     ![](./media/image5.png)
 
-7.  If you are asked about refining instructions further, provide the
-    following sentence.
+7. If you are asked about refining instructions further, provide the following sentence.
 
-    +++Focus on suggesting ways to keep plants and flowers shining and gorgeous+++
+    ```
+    Focus on suggesting ways to keep plants and flowers shining and gorgeous
+    ```
 
     ![](./media/image6.png)
 
-8.  Keep on interacting with the agent builder until it does have all
-    the information needed to create the agent. Provide the following
-    sentence.
+8. Keep on interacting with the agent builder until it does have all the information needed to create the agent. Provide the following sentence.
 
-    +++Focus on highlighting the importance of nature and plants/flowers to be present in every house!+++
+    ```
+    Focus on highlighting the importance of nature and plants/flowers to be present in every house!
+    ```
 
     ![](./media/image7.png)
 
     ![](./media/image8.png)
 
-9.  Then give an instruction of the agent tone as below.
+1. Then give an instruction of the agent tone as below.
 
-    +++Use a professional, yet friendly, tone.+++
+    ```
+    Use a professional, yet friendly, tone.
+    ```
 
     ![](./media/image9.png)
 
@@ -91,27 +87,21 @@ domain-specific assistant to life.
 
 13. Provide prompt like below to converse with the agent.
 
-    +++Give me tips to keep Rose plants fresh+++
+    ```
+    Give me tips to keep Rose plants fresh
+    ```
 
     ![](./media/image15.png)
 
-    ## Summary:
+## Summary:
 
-    In this lab, you created a **Gardening Assistant agent** using the
-    Copilot Studio Agent Builder experience. Starting with a simple
-    natural-language description, you defined the agent’s role as an expert
-    gardener and progressively refined its focus, tone, and personality
-    through interactive prompts. You customized the agent to provide
-    professional yet friendly gardening advice, with an emphasis on keeping
-    plants healthy, vibrant, and visually appealing while highlighting the
-    value of plants and flowers in every home.
+In this lab, you created a **Gardening Assistant agent** using the
+Copilot Studio Agent Builder experience. Starting with a simple
+natural-language description, you defined the agent’s role as an expert gardener and progressively refined its focus, tone, and personality through interactive prompts. You customized the agent to provideprofessional yet friendly gardening advice, with an emphasis on keeping plants healthy, vibrant, and visually appealing while highlighting the value of plants and flowers in every home.
 
-    After creating and launching the agent, you validated its behavior by
-    interacting with it using real user prompts, such as requesting tips to
-    keep rose plants fresh. This lab demonstrated how quickly and
-    intuitively you can build a purpose-driven agent using Copilot
-    Studio—without writing code—by leveraging conversational design and
-    iterative instruction refinement.
+After creating and launching the agent, you validated its behavior by
+interacting with it using real user prompts, such as requesting tips to keep rose plants fresh. This lab demonstrated how quickly and intuitively you can build a purpose-driven agent using Copilot Studio—without writing code—by leveraging conversational design and
+iterative instruction refinement.
 
 
 
