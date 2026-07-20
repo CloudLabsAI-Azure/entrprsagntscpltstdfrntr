@@ -1,0 +1,23 @@
+[ {
+  "Name": "Unlock Innovation with Agentic AI in Copilot Studio",
+  "Language": "English",
+  "Files": [
+    {
+      "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/entrprsagntscpltstdfrntr/refs/heads/main/Labguides/Lab%2001/Lab%201.md",
+      "Order": 1
+    },
+    {
+      "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/entrprsagntscpltstdfrntr/refs/heads/main/Labguides/Lab%2004/Lab%2004.md",
+      "Order": 2
+    },
+    {
+      "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/entrprsagntscpltstdfrntr/refs/heads/main/Labguides/Lab%2005/Lab%2005.md",
+      "Order": 3
+    },
+    {
+      "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/entrprsagntscpltstdfrntr/refs/heads/main/Labguides/Lab%2007/Lab%2007.md",
+      "Order": 4
+    }
+  ]
+} 
+]
