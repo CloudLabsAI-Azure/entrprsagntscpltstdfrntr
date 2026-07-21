@@ -10,23 +10,71 @@ Finally, you'll create the Hiring Agent in Copilot Studio, setting up
 the basic conversational interface that will serve as the cornerstone
 for all the other features you'll add in future missions.
 
-## Exercise 1: Import solution
+## Exercise 1: Creating Power Platform Environment
+
+1. Open a new browser tab and enter the following URL to navigate to the **Power Platform admin center**. 
+
+     ```
+	 https://admin.powerplatform.microsoft.com
+	 ```
+
+1. Sign in with following  credentials:
+
+	- **Email/Username:** **<inject key="AzureAdUserEmail"></inject>**
+
+	- **Password:** **<inject key="AzureAdUserPassword"></inject>** 
+
+1. In the left navigation pane, select **Manage (1) > Environments (2)**. Click on **+New (3)**.
+
+	![](./media/pp10.png)
+
+1. On the New Environment pop-up, provide the name as **DevOne-<inject key="Deployment ID" enableCopy="false"></inject>**.
+
+	![](./media/pp4.png)
+
+1. Expand **Change default settings (1)**, ensure **Add a Dataverse data store?** is set to **Yes (2)**, and then click **Next (3)**.
+
+	![](./media/ss.png)
+
+1. On the **Add Dataverse** page, click on **+Select** under Security Group.
+
+	![](./media/pp6.png)
+
+1. On **Edit Security group** pane , select **None (1)** and click **Done (2)**.
+
+	![](./media/new23.png)
+
+1. Select **Save** to apply the setting.
+
+	![](./media/pp8.png)
+
+1. Once the newly created environment is ready, click on it to open and then copy the **Environment ID** and paste it in the Notepad for later use.
+
+	![](./media/pp20.png)	
+
+1. Select **Save** to apply the setting.
+
+	![](./media/L00-E1-T5-S6.png)
+
+## Exercise 2: Import solution
 
 In this exercise, you will import a pre existing Solution.
 
-1.  Open a browser +++https://copilotstudio.microsoft.com+++ and login using the credentials from the **Resources** tab.
+1.  Open a browser **https://copilotstudio.microsoft.com** and login using the credentials from the **Resources** tab.
 
-2.	This open up the Trial activation page. Leave the country as **United States** and click **Get Started**.
+1. This open up the Trial activation page. Leave the country as **United States** and click **Get Started**.
 
-    ![](./media/image32.png)
+     ![](./media/image32.png)
+
+1. Make sure to select the environemnt that you created in previous.excercise 
+
+	![](./media/abc.png)	
   	
-4.  Select the **...** in the left navigation and select **Solutions.**
+1. Select the **...** in the left navigation and select **Solutions.**
 
     ![](./media/image1.png)
 
-5.  Select **Import solution**. Click on **Browse** and select the
-    **zip** file starting with **Operative** form **C:\LabFiles** and
-    select **Open**.
+1. Select **Import solution**. Click on **Browse** and select the **zip** file starting with **Operative** form **C:\LabFiles** and select **Open**.
 
     ![](./media/image2.png)
    
@@ -34,84 +82,70 @@ In this exercise, you will import a pre existing Solution.
 
     ![](./media/image4.png)
 
-6.  Once selected, select **Next** and then select **Import**.
+1. Once selected, select **Next** and then select **Import**.
 
-   ![](./media/image5.png)
+    ![](./media/image5.png)
    
-   ![](./media/image6.png)
+    ![](./media/image6.png)
 
-5.  This will take some time of around 3 to 5 minutes. On success, you
-    will see a green notification bar with the following message when
-    it's done: "Solution "Operative" imported successfully."
+5. This will take some time of around 3 to 5 minutes. On success, you will see a green notification bar with the following message when it's done: "Solution "Operative" imported successfully."
 
-   ![](./media/image7.png)
+    ![](./media/image7.png)
 
-6.  Once you see the "imported successfully" message, take a look at
-    what you imported by selecting the display name of the solution
-    (**Operative**) in the solutions list.
+1. Once you see the "imported successfully" message, take a look what you imported by selecting the display name of the solutio (**Operative**) in the solutions list.
 
-   ![](./media/image8.png)
+    ![](./media/image8.png)
 
-7.  Review the solution and ensure that the following components are
-    imported.
+7. Review the solution and ensure that the following components are imported.
 
-   ![](./media/image9.png)
+    ![](./media/image9.png)
 
-8.  Select the **Publish all customizations** button at the top of the page.
+8. Select the **Publish all customizations** button at the top of the page.
 
-   ![](./media/image10.png)
+    ![](./media/image10.png)
 
-## Exercise 2 - Import sample data
+## Exercise 3 - Import sample data
 
 In this exercise, you will add sample data to some of the tables that
 you imported in the previous exercise.
 
-1.  From the solution that you imported in the last exercise, select
-    the **Hiring Hub** Model-Driven App by selecting the checkmark in
-    front of the row and select the **Play** button at the top.
+1. From the solution that you imported in the last exercise, select the **Hiring Hub** Model-Driven App by selecting the checkmark in front of the row and select the **Play** button at the top.
 
    ![](./media/image11.png)
 
-2.  Select **Job Roles** in the left navigation. Select
-    the **More** icon (three dots below each other) in the command bar
-    and then select the **right arrow** next to **Import from Excel.**
+2. Select **Job Roles** in the left navigation. Select the **More** icon (three dots below each other) in the command bar and then select the **right arrow** next to **Import from Excel.**
 
    ![](./media/image12.png)
 
-3.  Select **Import from CSV**.
+3. Select **Import from CSV**.
 
    ![](./media/image13.png)
 
-4.  Select the **Choose File** button, select the **job-roles.csv** file
-    from **C:\LabFiles** and then select **Open**.
+4. Select the **Choose File** button, select the **job-roles.csv** file from **C:\LabFiles** and then select **Open**.
 
    ![](./media/image14.png)
 
-5.  Select **Next.** Leave the next step as is and select **Review
-    Mapping**
+5. Select **Next.** Leave the next step as is and select **Review Mapping**
 
    ![](./media/image15.png)
    
    ![](./media/image16.png)
 
-6.  Make sure the mapping is correct and select **Finish Import**.
+1. Make sure the mapping is correct and select **Finish Import**.
 
    ![](./media/image17.png)
 
-7.  Select **Done**. This can take a little while, but you can hit
-    the **Refresh** button to see if the import has succeeded.
+7. Select **Done**. This can take a little while, but you can hit the **Refresh** button to see if the import has succeeded.
 
    ![](./media/image18.png)
    
    ![](./media/image19.png)
 
-8.  Now, you will import the **Evaluation Criteria sample data**
+1. Now, you will import the **Evaluation Criteria sample data**
 
-9.  Select **Evaluation Criteria** in the left navigation.
+9. Select **Evaluation Criteria** in the left navigation.
 
-10. Select **Import from CSV** like you did earlier. Select the **Choose
-    File** button, select the **evaluation-criteria.csv** from
-    **C:\LabFiles**.
+10. Select **Import from CSV** like you did earlier. Select the **Choose File** button, select the **evaluation-criteria.csv** from **C:\LabFiles**.
 
    ![](./media/image20.png)
 
@@ -125,48 +159,44 @@ you imported in the previous exercise.
     >
     >![](./media/image31.png)
 
-12. Now we have to do a bit more work for the mapping. Select the
-    **magnifying glass icon** next to the **Job Role** field.
+12. Now we have to do a bit more work for the mapping. Select the **magnifying glass icon** next to the **Job Role** field.
 
    ![](./media/image23.png)
 
-13. Make sure **Job Title** is selected here, and if not - add it and
-    select **OK**.
+13. Make sure **Job Title** is selected here, and if not - add it and select **OK**.
 
    ![](./media/image24.png)
 
-14. Make sure the rest of the mapping is correct too and select **Finish
-    Import** and then select **Done**.
+14. Make sure the rest of the mapping is correct too and select **Finish Import** and then select **Done**.
 
    ![](./media/image25.png)
 
-15. This can take a little while, but you can hit the **Refresh** button
-    to see if the import has succeeded.
+15. This can take a little while, but you can hit the **Refresh** button to see if the import has succeeded.
 
    ![](./media/image26.png)
 
-## Exercise 3 - Create the hiring agent
+## Exercise 4 - Create the hiring agent
 
 Now you are done with the setup of the prerequisites, it's time for the
 actual work! Let's add our Hiring Agent first!
 
-1.  From the Copilot Studio, select **Agents** from the left pane. Select **+ Create blank agent**.
+1. From the Copilot Studio, select **Agents** from the left pane. Select **+ Create blank agent**.
 
     ![](./media/image33.png)
 
-2.	Enter the Name as +++Hiring Agent+++ and select the **Agent settings** option.
+2. Enter the Name as +++Hiring Agent+++ and select the **Agent settings** option.
 
     ![](./media/image34.png)
 
-3.	Select the Solution as **Operative** and then select **create**.
+3. Select the Solution as **Operative** and then select **create**.
 
   	 ![](./media/image35.png)
   	
-3.  Select **Edit** against the Details of the created agent.
+3. Select **Edit** against the Details of the created agent.
 
     ![](./media/image36.png)
 
-4.  Enter **Description** as +++**Central orchestrator for all hiring activities**+++ and select **Save**.
+4. Enter **Description** as **Central orchestrator for all hiring activities** and select **Save**.
 
     ![](./media/image37.png)
 
